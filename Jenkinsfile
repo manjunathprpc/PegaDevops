@@ -6,5 +6,10 @@ pipeline {
         build 'ExportFromDev'
       }
     }
+    stage('') {
+      steps {
+        build 'MoveToSharedSystem'
+      }
+    }
   }
 }
